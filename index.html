@@ -7,7 +7,7 @@
     <title>CodeWithCuesta Projects</title>
     <style>
         * {
-            /* border: 1px solid black;  */
+            border: 1px solid black; 
         }
         #header {
             display: flex;
@@ -18,7 +18,7 @@
             margin-bottom: 50px;
         }
         #previewOne {
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
         #cardDesc {
           display: flex;
@@ -29,7 +29,9 @@
         /* // SideBar // */
         #content{
             display: flex;
-            justify-content: flex-end;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 2em;
         }
         #main-sideBar {
@@ -37,14 +39,16 @@
             background-image: linear-gradient(to bottom, rgb(151, 151, 167), 
             rgb(56, 128, 56));
         }
-        /* #main-sideBar, */
+        #main-sideBar,
         #topLink {
             display: flex;
             flex-direction: column;
             margin-left: auto;
             color: aliceblue;
         }
-        
+        #projects {
+            display: flex;
+        }
     </style>
 </head>
 <body>
