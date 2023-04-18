@@ -23,12 +23,52 @@
         #cardDesc {
           display: flex;
         }
+        #title {
+            width: 75%;
+        }
+        /* // SideBar // */
+        #content{
+            display: flex;
+            justify-content: flex-end;
+            gap: 2em;
+        }
+        #main-sideBar {
+            /* background-color: blue; */
+            background-image: linear-gradient(to bottom, rgb(151, 151, 167), 
+            rgb(56, 128, 56));
+        }
+        /* #main-sideBar, */
+        #topLink {
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            color: aliceblue;
+        }
+        
     </style>
 </head>
 <body>
     <header><div id="header">CodeWithCuesta</div></header>
-    <content>
+    <content id="content">
         <div id="projects">
+            <div id="card" class="rStudio">
+                <h1 id="title">Data Visualization Report on Hypertension</h1>
+                <object id="previewOne" data="img/MCuestadataVisFinal.pdf" 
+                type="application/pdf" width="75%" height="600px">
+                </object>
+                <div id="cardDesc"><div>Here goes some text</div>
+                    <ul>
+                        <li>Thing</li>
+                        <li>Thing</li>
+                        <li>Thing</li>
+                    </ul>
+                    <ul>
+                        <li>Thing</li>
+                        <li>Thing</li>
+                        <li>Thing</li>
+                    </ul>
+                </div>
+            </div>
             <div id="card">
                 <h1 id="title">Data Visualization Report on Hypertension</h1>
                 <object id="previewOne" data="img/MCuestadataVisFinal.pdf" 
@@ -46,6 +86,35 @@
                         <li>Thing</li>
                     </ul>
                 </div>
+            </div>
+            <div id="card">
+                <h1 id="title">Data Visualization Report on Hypertension</h1>
+                <object id="previewOne" data="img/MCuestadataVisFinal.pdf" 
+                type="application/pdf" width="75%" height="600px">
+                </object>
+                <div id="cardDesc"><div>Here goes some text</div>
+                    <ul>
+                        <li>Thing</li>
+                        <li>Thing</li>
+                        <li>Thing</li>
+                    </ul>
+                    <ul>
+                        <li>Thing</li>
+                        <li>Thing</li>
+                        <li>Thing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="main-sideBar">
+            <a id="topLink" href="">This Is A Lik</a>
+            <div style="text-align: center;"><p class="SB-intro">This is the Home Page</p>
+                Click The Links to View Content.</div>
+            <div id="yearContainer">
+                <a class="yearBtn" href="">2020</a>
+                <a class="yearBtn" href="">2021</a>
+                <a class="yearBtn" href="">2022</a>
+                <a class="yearBtn" href="">2023</a>
             </div>
         </div>
     </content>
