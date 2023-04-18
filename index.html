@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeWithCuesta Projects</title>
     <style>
+        * {
+            /* border: 1px solid black;  */
+        }
         #header {
             display: flex;
             justify-content: center;
@@ -14,19 +17,35 @@
             box-shadow:0 0 5px 5px rgba(17, 0, 255, 0.514);
             margin-bottom: 50px;
         }
+        #previewOne {
+            margin-bottom: 40px;
+        }
+        #cardDesc {
+          display: flex;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <div id="header">CodeWithCuesta</div>
-    </header>
+    <header><div id="header">CodeWithCuesta</div></header>
     <content>
         <div id="projects">
             <div id="card">
-                <ul>
-                    <li><a href="../../Data-science/MCuesta-dataVisFinal.pdf">
-                        RMarkdown PDF DataViz Final</a></li>
-                </ul>
+                <h1 id="title">Data Visualization Report on Hypertension</h1>
+                <object id="previewOne" data="img/MCuestadataVisFinal.pdf" 
+                type="application/pdf" width="75%" height="600px">
+                </object>
+                <div id="cardDesc"><div>Here goes some text</div>
+                    <ul>
+                        <li>Thing</li>
+                        <li>Thing</li>
+                        <li>Thing</li>
+                    </ul>
+                    <ul>
+                        <li>Thing</li>
+                        <li>Thing</li>
+                        <li>Thing</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </content>
