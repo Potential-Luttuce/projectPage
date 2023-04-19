@@ -7,7 +7,13 @@
     <title>CodeWithCuesta Projects</title>
     <style>
         * {
-            border: 1px solid black; 
+            /* border: 1px solid black;  */
+        }
+        body {
+            margin: 0px;
+        }
+        #flex-container {
+            display: flex;
         }
         #header {
             display: flex;
@@ -17,11 +23,9 @@
             box-shadow:0 0 5px 5px rgba(17, 0, 255, 0.514);
             margin-bottom: 50px;
         }
-        #previewOne {
-            margin-bottom: 50px;
-        }
-        #cardDesc {
-          display: flex;
+        #card {
+            display: flex;
+            flex-direction: column;
         }
         #title {
             width: 75%;
@@ -39,79 +43,127 @@
             background-image: linear-gradient(to bottom, rgb(151, 151, 167), 
             rgb(56, 128, 56));
         }
-        #main-sideBar,
-        #topLink {
+        #main-sideBar {
             display: flex;
             flex-direction: column;
             margin-left: auto;
             color: aliceblue;
+            padding: 1em;
         }
         #projects {
             display: flex;
+            flex-wrap: wrap;
+            padding: 0 1em;
+            /* gap: 20px; */
+        }
+        #card {
+            width: 500px
+        }
+        .rStudio:hover {
+            box-shadow: 2px 5px -;
         }
     </style>
 </head>
 <body>
-    <header><div id="header">CodeWithCuesta</div></header>
-    <content id="content">
-        <div id="projects">
-            <div id="card" class="rStudio">
-                <h1 id="title">Data Visualization Report on Hypertension</h1>
-                <object id="previewOne" data="img/MCuestadataVisFinal.pdf" 
-                type="application/pdf" width="75%" height="600px">
-                </object>
-                <div id="cardDesc"><div>Here goes some text</div>
-                    <ul>
-                        <li>Thing</li>
-                        <li>Thing</li>
-                        <li>Thing</li>
-                    </ul>
-                    <ul>
-                        <li>Thing</li>
-                        <li>Thing</li>
-                        <li>Thing</li>
-                    </ul>
+    <div id="flex-container">
+        <content id="content">
+            <header><div id="header">CodeWithCuesta</div></header>
+            <div id="projects">
+                <div id="card" class="rStudio">
+                    <h1 id="title">Data Visualization Report on Hypertension</h1>
+                    <a href="img/MCuestadataVisFinal.pdf">View / Download</a>
+                    <object id="preview" data="img/MCuestadataVisFinal.pdf" 
+                    type="application/pdf" width="80%" height="600px">
+                    </object>
+                    <div id="cardDesc">
+                        <div>Here goes some text</div>
+                        <ul>
+                            <li>Thing</li>
+                            <li>Thing</li>
+                            <li>Thing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="card" class="rStudio">
+                    <h1 id="title">Data Science Index Visualization</h1>
+                    <a href="img/DataScienceIndex.pdf">View / Download</a>
+                    <object id="preview" data="img/DataScienceIndex.pdf" 
+                    type="application/pdf" width="80%" height="600px">
+                    </object>
+                    <div id="cardDesc"><div>Here goes some text</div>
+                        <ul>
+                            <li>Thing</li>
+                            <li>Thing</li>
+                            <li>Thing</li>
+                        </ul>
+                        <ul>
+                            <li>Thing</li>
+                            <li>Thing</li>
+                            <li>Thing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="card">
+                    <h1 id="title">Data Visualization Report on Hypertension</h1>
+                    <a href="">View / Download</a>
+                    <object id="previewOne" data="img/MCuestadataVisFinal.pdf" 
+                    type="application/pdf" width="80%" height="600px">
+                    </object>
+                    <div id="cardDesc"><div>Here goes some text</div>
+                        <ul>
+                            <li>Thing</li>
+                            <li>Thing</li>
+                            <li>Thing</li>
+                        </ul>
+                        <ul>
+                            <li>Thing</li>
+                            <li>Thing</li>
+                            <li>Thing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="card">
+                    <h1 id="title">Data Visualization Report on Hypertension</h1>
+                    <a href="">View / Download</a>
+                    <object id="preview" data="img/MCuestadataVisFinal.pdf" 
+                    type="application/pdf" width="80%" height="600px">
+                    </object>
+                    <div id="cardDesc"><div>Here goes some text</div>
+                        <ul>
+                            <li>Thing</li>
+                            <li>Thing</li>
+                            <li>Thing</li>
+                        </ul>
+                        <ul>
+                            <li>Thing</li>
+                            <li>Thing</li>
+                            <li>Thing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="card">
+                    <h1 id="title">Data Visualization Report on Hypertension</h1>
+                    <a href="">View / Download</a>
+                    <object id="previewOne" data="img/MCuestadataVisFinal.pdf" 
+                    type="application/pdf" width="80%" height="600px">
+                    </object>
+                    <div id="cardDesc"><div>Here goes some text</div>
+                        <ul>
+                            <li>Thing</li>
+                            <li>Thing</li>
+                            <li>Thing</li>
+                        </ul>
+                        <ul>
+                            <li>Thing</li>
+                            <li>Thing</li>
+                            <li>Thing</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div id="card">
-                <h1 id="title">Data Visualization Report on Hypertension</h1>
-                <object id="previewOne" data="img/MCuestadataVisFinal.pdf" 
-                type="application/pdf" width="75%" height="600px">
-                </object>
-                <div id="cardDesc"><div>Here goes some text</div>
-                    <ul>
-                        <li>Thing</li>
-                        <li>Thing</li>
-                        <li>Thing</li>
-                    </ul>
-                    <ul>
-                        <li>Thing</li>
-                        <li>Thing</li>
-                        <li>Thing</li>
-                    </ul>
-                </div>
-            </div>
-            <div id="card">
-                <h1 id="title">Data Visualization Report on Hypertension</h1>
-                <object id="previewOne" data="img/MCuestadataVisFinal.pdf" 
-                type="application/pdf" width="75%" height="600px">
-                </object>
-                <div id="cardDesc"><div>Here goes some text</div>
-                    <ul>
-                        <li>Thing</li>
-                        <li>Thing</li>
-                        <li>Thing</li>
-                    </ul>
-                    <ul>
-                        <li>Thing</li>
-                        <li>Thing</li>
-                        <li>Thing</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        </content>
         <div id="main-sideBar">
-            <a id="topLink" href="">This Is A Lik</a>
+            <a id="topLink" href="">This Is A Link</a>
             <div style="text-align: center;"><p class="SB-intro">This is the Home Page</p>
                 Click The Links to View Content.</div>
             <div id="yearContainer">
@@ -121,6 +173,6 @@
                 <a class="yearBtn" href="">2023</a>
             </div>
         </div>
-    </content>
+    </div>
 </body>
 </html>
